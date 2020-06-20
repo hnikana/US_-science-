@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -q wsuq
+#PBS -l select=1:ncpus=32:mem=256GB
+#PBS -m ea
+#PBS -M gn8525@wayne.edu
+#PBS -o /wsu/home/gn/gn85/gn8525/In_market_timing/output_file
+##PBS -e /wsu/home/gn/gn85/gn8525/In_market_timing/error_file
+
+ml python/3.7
+python /wsu/home/gn/gn85/gn8525/In_market_timing/in_time_grid_3.py
+
